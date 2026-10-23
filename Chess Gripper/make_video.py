@@ -5,7 +5,7 @@
 """
 Encode the rendered frames of the chess-gripper animation as an MP4 and a GIF.
 
-    uv run make_video.py frames                      # -> ../../Renders/Chess Gripper Animation.mp4 / .gif
+    uv run make_video.py frames                      # -> Renders/Chess Gripper Animation.mp4 / .gif
     uv run make_video.py frames --gif-width 800 --gif-fps 15
 
 Reads frames/frame_####.png and frames/timeline.json written by animate_chess_gripper.py.
@@ -21,7 +21,7 @@ import sys
 import tempfile
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-RENDERS = os.path.normpath(os.path.join(HERE, "..", "..", "Renders"))
+RENDERS = os.path.join(HERE, "Renders")
 
 
 def main():

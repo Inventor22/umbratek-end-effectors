@@ -1,6 +1,6 @@
 # Quick-Change Pen Holder (UTRA 6-1000)
 
-![Quick-change pen holder drawing on paper](../../Renders/Quick-Change%20Pen%20Holder%20Render%200.png)
+![Quick-change pen holder drawing on paper](Renders/Quick-Change%20Pen%20Holder%20Render%200.png)
 
 A second version of the [compliant pen holder](../Pen%20Holder/README.md). Here the pen sits **perpendicular to the
 flange axis**, takes **any pen from 6 to 17 mm**, and pens are swapped by sliding **cartridges** in and out
@@ -24,10 +24,10 @@ PETG flexure stage instead of the rods and coil springs.
 
 | | |
 |---|---|
-| ![Section](../../Renders/Quick-Change%20Pen%20Holder%20Render%201.png) | ![Exploded view](../../Renders/Quick-Change%20Pen%20Holder%20Render%202.png) |
-| ![Twist chuck](../../Renders/Quick-Change%20Pen%20Holder%20Render%203.png) | ![Spring compliance](../../Renders/Quick-Change%20Pen%20Holder%20Render%204.png) |
-| ![Quick pen swap](../../Renders/Quick-Change%20Pen%20Holder%20Render%205.png) | ![Print layout](../../Renders/Quick-Change%20Pen%20Holder%20Render%206.png) |
-| ![Ratchet clicks](../../Renders/Quick-Change%20Pen%20Holder%20Render%207.png) | |
+| ![Section](Renders/Quick-Change%20Pen%20Holder%20Render%201.png) | ![Exploded view](Renders/Quick-Change%20Pen%20Holder%20Render%202.png) |
+| ![Twist chuck](Renders/Quick-Change%20Pen%20Holder%20Render%203.png) | ![Spring compliance](Renders/Quick-Change%20Pen%20Holder%20Render%204.png) |
+| ![Quick pen swap](Renders/Quick-Change%20Pen%20Holder%20Render%205.png) | ![Print layout](Renders/Quick-Change%20Pen%20Holder%20Render%206.png) |
+| ![Ratchet clicks](Renders/Quick-Change%20Pen%20Holder%20Render%207.png) | |
 
 ## How it works
 
@@ -175,7 +175,7 @@ mechanism stop working.
 
 ```
 uv run quick_change_pen_holder.py              # design report + STEP / STL / GLB
-uv run render_quick_change.py                  # renders 1-7 into ../../Renders
+uv run render_quick_change.py                  # renders 1-7 into Renders
 uv run render_quick_change.py --hero-glb hero.glb
-blender --background --factory-startup --python blender_hero_quick_change.py -- hero.glb "../../Renders/Quick-Change Pen Holder Render 0.png"
+blender --background --factory-startup --python blender_hero_quick_change.py -- hero.glb "Renders/Quick-Change Pen Holder Render 0.png"
 ```

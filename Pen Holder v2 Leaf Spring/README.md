@@ -1,6 +1,6 @@
 # Pen Holder v2, leaf-spring version (UTRA 6-1000)
 
-![Leaf-spring pen holder drawing on paper](../../Renders/Pen%20Holder%20v2%20Leaf%20Spring%20Render%200.png)
+![Leaf-spring pen holder drawing on paper](Renders/Pen%20Holder%20v2%20Leaf%20Spring%20Render%200.png)
 
 The [v1 coaxial pen holder](../Pen%20Holder/README.md) with its steel coil spring replaced by a **printed PETG
 bow-spring stack**. Everything else works as in v1: the carriage slides in the barrel on two set-screw guide pins,
@@ -21,8 +21,8 @@ beams also guide the pen, with no sliding fit, see [Pen Holder v2](../Pen%20Hold
 
 | | |
 |---|---|
-| ![Cutaway](../../Renders/Pen%20Holder%20v2%20Leaf%20Spring%20Render%201.png) | ![Compliance](../../Renders/Pen%20Holder%20v2%20Leaf%20Spring%20Render%202.png) |
-| ![Bow-spring stack](../../Renders/Pen%20Holder%20v2%20Leaf%20Spring%20Render%203.png) | ![Print layout](../../Renders/Pen%20Holder%20v2%20Leaf%20Spring%20Render%204.png) |
+| ![Cutaway](Renders/Pen%20Holder%20v2%20Leaf%20Spring%20Render%201.png) | ![Compliance](Renders/Pen%20Holder%20v2%20Leaf%20Spring%20Render%202.png) |
+| ![Bow-spring stack](Renders/Pen%20Holder%20v2%20Leaf%20Spring%20Render%203.png) | ![Print layout](Renders/Pen%20Holder%20v2%20Leaf%20Spring%20Render%204.png) |
 
 ## How it works
 
@@ -117,7 +117,7 @@ As v1, with the stack in place of the coil spring:
 
 ```
 uv run pen_holder_v2_leaf.py                  # design report + STEP / STL / GLB
-uv run render_pen_holder_v2_leaf.py           # renders 1-4 into ../../Renders
+uv run render_pen_holder_v2_leaf.py           # renders 1-4 into Renders
 uv run render_pen_holder_v2_leaf.py --hero-glb hero.glb
-blender --background --factory-startup --python "../Pen Holder/blender_hero.py" -- hero.glb "../../Renders/Pen Holder v2 Leaf Spring Render 0.png"
+blender --background --factory-startup --python "../Pen Holder/blender_hero.py" -- hero.glb "Renders/Pen Holder v2 Leaf Spring Render 0.png"
 ```

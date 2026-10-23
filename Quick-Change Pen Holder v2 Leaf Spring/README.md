@@ -1,6 +1,6 @@
 # Quick-Change Pen Holder v2, leaf-spring version (UTRA 6-1000)
 
-![Leaf-spring quick-change pen holder drawing on paper](../../Renders/Quick-Change%20Pen%20Holder%20v2%20Leaf%20Spring%20Render%200.png)
+![Leaf-spring quick-change pen holder drawing on paper](Renders/Quick-Change%20Pen%20Holder%20v2%20Leaf%20Spring%20Render%200.png)
 
 The [v1 quick-change pen holder](../Quick-Change%20Pen%20Holder/README.md) with its two steel coil springs replaced
 by a **printed PETG bow-spring stack** threaded on the two guide rods. Everything else works as in v1: the carriage
@@ -23,8 +23,8 @@ where v1 puts it**. For the version where printed beams also guide the carriage,
 
 | | |
 |---|---|
-| ![Overview](../../Renders/Quick-Change%20Pen%20Holder%20v2%20Leaf%20Spring%20Render%201.png) | ![Compliance](../../Renders/Quick-Change%20Pen%20Holder%20v2%20Leaf%20Spring%20Render%202.png) |
-| ![Bow-spring stack](../../Renders/Quick-Change%20Pen%20Holder%20v2%20Leaf%20Spring%20Render%203.png) | ![Print layout](../../Renders/Quick-Change%20Pen%20Holder%20v2%20Leaf%20Spring%20Render%204.png) |
+| ![Overview](Renders/Quick-Change%20Pen%20Holder%20v2%20Leaf%20Spring%20Render%201.png) | ![Compliance](Renders/Quick-Change%20Pen%20Holder%20v2%20Leaf%20Spring%20Render%202.png) |
+| ![Bow-spring stack](Renders/Quick-Change%20Pen%20Holder%20v2%20Leaf%20Spring%20Render%203.png) | ![Print layout](Renders/Quick-Change%20Pen%20Holder%20v2%20Leaf%20Spring%20Render%204.png) |
 
 ## How it works
 
@@ -122,7 +122,7 @@ Command the pen-down height 2 to 5 mm below the paper: about 1.6 to 2.2 N from t
 
 ```
 uv run quick_change_v2_leaf.py              # design report + STEP / STL / GLB
-uv run render_quick_change_v2_leaf.py       # renders 1-4 into ../../Renders
+uv run render_quick_change_v2_leaf.py       # renders 1-4 into Renders
 uv run render_quick_change_v2_leaf.py --hero-glb hero.glb
-blender --background --factory-startup --python "../Quick-Change Pen Holder/blender_hero_quick_change.py" -- hero.glb "../../Renders/Quick-Change Pen Holder v2 Leaf Spring Render 0.png"
+blender --background --factory-startup --python "../Quick-Change Pen Holder/blender_hero_quick_change.py" -- hero.glb "Renders/Quick-Change Pen Holder v2 Leaf Spring Render 0.png"
 ```

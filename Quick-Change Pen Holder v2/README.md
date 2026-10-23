@@ -1,6 +1,6 @@
 # Quick-Change Pen Holder v2: printed flexure stage (UTRA 6-1000)
 
-![Quick-change pen holder v2 drawing on paper](../../Renders/Quick-Change%20Pen%20Holder%20v2%20Render%200.png)
+![Quick-change pen holder v2 drawing on paper](Renders/Quick-Change%20Pen%20Holder%20v2%20Render%200.png)
 
 Version 2 of the [quick-change pen holder](../Quick-Change%20Pen%20Holder/README.md). The pen still sits
 perpendicular to the flange, in the same tool-free cartridges with two twist chucks, with 15 mm of compliant travel
@@ -25,9 +25,9 @@ For the coaxial holder with the same kind of flexure, see [Pen Holder v2](../Pen
 
 | | |
 |---|---|
-| ![Overview](../../Renders/Quick-Change%20Pen%20Holder%20v2%20Render%201.png) | ![Flexure stage](../../Renders/Quick-Change%20Pen%20Holder%20v2%20Render%202.png) |
-| ![Compliance](../../Renders/Quick-Change%20Pen%20Holder%20v2%20Render%203.png) | ![Exploded view](../../Renders/Quick-Change%20Pen%20Holder%20v2%20Render%204.png) |
-| ![Print layout](../../Renders/Quick-Change%20Pen%20Holder%20v2%20Render%205.png) | |
+| ![Overview](Renders/Quick-Change%20Pen%20Holder%20v2%20Render%201.png) | ![Flexure stage](Renders/Quick-Change%20Pen%20Holder%20v2%20Render%202.png) |
+| ![Compliance](Renders/Quick-Change%20Pen%20Holder%20v2%20Render%203.png) | ![Exploded view](Renders/Quick-Change%20Pen%20Holder%20v2%20Render%204.png) |
+| ![Print layout](Renders/Quick-Change%20Pen%20Holder%20v2%20Render%205.png) | |
 
 ## How it works
 
@@ -143,7 +143,7 @@ dovetail rail on top (its flanks lean 32°).
 
 ```
 uv run quick_change_v2.py              # design report + STEP / STL / GLB
-uv run render_quick_change_v2.py       # renders 1-5 into ../../Renders
+uv run render_quick_change_v2.py       # renders 1-5 into Renders
 uv run render_quick_change_v2.py --hero-glb hero.glb
-blender --background --factory-startup --python "../Quick-Change Pen Holder/blender_hero_quick_change.py" -- hero.glb "../../Renders/Quick-Change Pen Holder v2 Render 0.png"
+blender --background --factory-startup --python "../Quick-Change Pen Holder/blender_hero_quick_change.py" -- hero.glb "Renders/Quick-Change Pen Holder v2 Render 0.png"
 ```

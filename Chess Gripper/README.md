@@ -1,10 +1,10 @@
 # Chess Gripper end effector (UTRA 6-1000)
 
-![How the chess gripper works](../../Renders/Chess%20Gripper%20Animation.gif)
+![How the chess gripper works](Renders/Chess%20Gripper%20Animation.gif)
 
 A three-claw gripper that lifts chess pieces by the neck, just under the collar. An SG90 micro servo
 pushes the claws open. A broccoli rubber band closes them and does all of the holding.
-Full-resolution video: [Chess Gripper Animation.mp4](../../Renders/Chess%20Gripper%20Animation.mp4).
+Full-resolution video: [Chess Gripper Animation.mp4](Renders/Chess%20Gripper%20Animation.mp4).
 
 ## How it works
 

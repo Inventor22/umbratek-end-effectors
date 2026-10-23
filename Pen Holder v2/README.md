@@ -1,6 +1,6 @@
 # Pen Holder v2: printed flexure spring (UTRA 6-1000)
 
-![Pen holder v2 drawing on paper](../../Renders/Pen%20Holder%20v2%20Render%200.png)
+![Pen holder v2 drawing on paper](Renders/Pen%20Holder%20v2%20Render%200.png)
 
 Version 2 of the [coaxial pen holder](../Pen%20Holder/README.md). The pen still sits on the flange axis with 15 mm
 of compliant over-travel, but the **coil spring, sliding carriage and guide pins are replaced by one printed PETG
@@ -24,9 +24,9 @@ For the perpendicular quick-change holder with the same kind of flexure, see
 
 | | |
 |---|---|
-| ![Overview](../../Renders/Pen%20Holder%20v2%20Render%201.png) | ![Section](../../Renders/Pen%20Holder%20v2%20Render%202.png) |
-| ![Compliance](../../Renders/Pen%20Holder%20v2%20Render%203.png) | ![Exploded view](../../Renders/Pen%20Holder%20v2%20Render%204.png) |
-| ![Print layout](../../Renders/Pen%20Holder%20v2%20Render%205.png) | |
+| ![Overview](Renders/Pen%20Holder%20v2%20Render%201.png) | ![Section](Renders/Pen%20Holder%20v2%20Render%202.png) |
+| ![Compliance](Renders/Pen%20Holder%20v2%20Render%203.png) | ![Exploded view](Renders/Pen%20Holder%20v2%20Render%204.png) |
+| ![Print layout](Renders/Pen%20Holder%20v2%20Render%205.png) | |
 
 ## How it works
 
@@ -150,7 +150,7 @@ makes parts collide or breaks an assembly rule.
 
 ```
 uv run pen_holder_v2.py                  # design report + STEP / STL / GLB
-uv run render_pen_holder_v2.py           # renders 1-5 into ../../Renders
+uv run render_pen_holder_v2.py           # renders 1-5 into Renders
 uv run render_pen_holder_v2.py --hero-glb hero.glb
-blender --background --factory-startup --python "../Pen Holder/blender_hero.py" -- hero.glb "../../Renders/Pen Holder v2 Render 0.png"
+blender --background --factory-startup --python "../Pen Holder/blender_hero.py" -- hero.glb "Renders/Pen Holder v2 Render 0.png"
 ```

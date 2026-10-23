@@ -5,7 +5,7 @@
 """
 Render the UTRA 6-1000 pen-holder end effector (pen_holder.py) to PNG images.
 
-    uv run render_pen_holder.py          # -> <repo>/Renders/Pen Holder End Effector Render N.png
+    uv run render_pen_holder.py          # -> Renders/Pen Holder End Effector Render N.png
 
 Needs an OpenGL-capable GPU/driver (VTK off-screen rendering).
 """
@@ -27,7 +27,7 @@ HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 import pen_holder as ph  # noqa: E402
 
-OUT_DIR = HERE.parents[1] / "Renders"
+OUT_DIR = HERE / "Renders"
 PREFIX = "Pen Holder End Effector Render"
 INK = (29, 31, 35)
 
@@ -281,7 +281,7 @@ def annotate(img: Image.Image, sc: Scene, notes: list, *, size: int = 25, left_x
             y += hh
 
 
-def footer(img: Image.Image, text: str = "umbratek-cad / End Effectors / Pen Holder  -  build123d") -> None:
+def footer(img: Image.Image, text: str = "umbratek-end-effectors / Pen Holder  -  build123d") -> None:
     w, h = img.size
     d = ImageDraw.Draw(img)
     fn = font(20)

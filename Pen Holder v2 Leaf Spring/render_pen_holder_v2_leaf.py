@@ -5,7 +5,7 @@
 """
 Render pen holder v2, leaf-spring version (pen_holder_v2_leaf.py), to PNG images.
 
-    uv run render_pen_holder_v2_leaf.py              # -> <repo>/Renders/Pen Holder v2 Leaf Spring Render N.png
+    uv run render_pen_holder_v2_leaf.py              # -> Renders/Pen Holder v2 Leaf Spring Render N.png
     uv run render_pen_holder_v2_leaf.py --hero-glb hero.glb   # scene for ../Pen Holder/blender_hero.py
 """
 
@@ -26,9 +26,9 @@ import render_pen_holder as rph  # noqa: E402
 from render_pen_holder import INK, Scene, annotate, cut_away, font, footer, title  # noqa: E402
 
 ph = lf.ph
-OUT_DIR = HERE.parents[1] / "Renders"
+OUT_DIR = HERE / "Renders"
 PREFIX = "Pen Holder v2 Leaf Spring Render"
-FOOT = "umbratek-cad / End Effectors / Pen Holder v2 Leaf Spring  -  build123d"
+FOOT = "umbratek-end-effectors / Pen Holder v2 Leaf Spring  -  build123d"
 rph.MATERIALS["spring_petg"] = ("#f26b1d", 0.0, 0.42, "#ff9d5c")
 RED = (200, 60, 20)
 

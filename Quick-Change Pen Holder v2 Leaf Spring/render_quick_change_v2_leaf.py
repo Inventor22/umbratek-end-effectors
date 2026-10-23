@@ -5,7 +5,7 @@
 """
 Render the quick-change pen holder v2, leaf-spring version (quick_change_v2_leaf.py), to PNG images.
 
-    uv run render_quick_change_v2_leaf.py      # -> <repo>/Renders/Quick-Change Pen Holder v2 Leaf Spring Render N.png
+    uv run render_quick_change_v2_leaf.py      # -> Renders/Quick-Change Pen Holder v2 Leaf Spring Render N.png
     uv run render_quick_change_v2_leaf.py --hero-glb hero.glb  # for ../Quick-Change Pen Holder/blender_hero_quick_change.py
 """
 
@@ -27,9 +27,9 @@ import render_quick_change as rqc  # noqa: E402  (v1 materials)
 from render_pen_holder import INK, Scene, annotate, font, footer, title  # noqa: E402
 
 qc, ph = lf.qc, lf.ph
-OUT_DIR = HERE.parents[1] / "Renders"
+OUT_DIR = HERE / "Renders"
 PREFIX = "Quick-Change Pen Holder v2 Leaf Spring Render"
-FOOT = "umbratek-cad / End Effectors / Quick-Change Pen Holder v2 Leaf Spring  -  build123d"
+FOOT = "umbratek-end-effectors / Quick-Change Pen Holder v2 Leaf Spring  -  build123d"
 rqc.rph.MATERIALS["spring_petg"] = ("#f26b1d", 0.0, 0.42, "#ff9d5c")
 RED = (200, 60, 20)
 

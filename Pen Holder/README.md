@@ -1,6 +1,6 @@
 # Pen Holder end effector (UTRA 6-1000)
 
-![Pen holder drawing on paper](../../Renders/Pen%20Holder%20End%20Effector%20Render%200.png)
+![Pen holder drawing on paper](Renders/Pen%20Holder%20End%20Effector%20Render%200.png)
 
 A spring-loaded pen holder for the Umbratek UTRA 6-1000 arm, modelled in
 [build123d](https://github.com/gumyr/build123d). The pen is clamped in a carriage that slides in a
@@ -23,9 +23,9 @@ printed PETG flexure instead of the coil spring, see [Pen Holder v2](../Pen%20Ho
 
 | | |
 |---|---|
-| ![Cutaway](../../Renders/Pen%20Holder%20End%20Effector%20Render%201.png) | ![Exploded view](../../Renders/Pen%20Holder%20End%20Effector%20Render%202.png) |
-| ![Spring compliance](../../Renders/Pen%20Holder%20End%20Effector%20Render%203.png) | ![Mounting interface](../../Renders/Pen%20Holder%20End%20Effector%20Render%204.png) |
-| ![Print layout](../../Renders/Pen%20Holder%20End%20Effector%20Render%205.png) | |
+| ![Cutaway](Renders/Pen%20Holder%20End%20Effector%20Render%201.png) | ![Exploded view](Renders/Pen%20Holder%20End%20Effector%20Render%202.png) |
+| ![Spring compliance](Renders/Pen%20Holder%20End%20Effector%20Render%203.png) | ![Mounting interface](Renders/Pen%20Holder%20End%20Effector%20Render%204.png) |
+| ![Print layout](Renders/Pen%20Holder%20End%20Effector%20Render%205.png) | |
 
 ## How it works
 
@@ -115,9 +115,9 @@ The scripts declare their dependencies inline (PEP 723), so [uv](https://docs.as
 
 ```
 uv run pen_holder.py                  # design report + STEP / STL / GLB
-uv run render_pen_holder.py           # renders 1-5 into ../../Renders
+uv run render_pen_holder.py           # renders 1-5 into Renders
 uv run render_pen_holder.py --hero-glb hero.glb
-blender --background --factory-startup --python blender_hero.py -- hero.glb "../../Renders/Pen Holder End Effector Render 0.png"
+blender --background --factory-startup --python blender_hero.py -- hero.glb "Renders/Pen Holder End Effector Render 0.png"
 ```
 
 `blender_hero.py` takes optional arguments after the output path: samples (default 256), width, height.

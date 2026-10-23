@@ -2,7 +2,7 @@
 Photoreal hero render of the UTRA 6-1000 pen holder (Blender / Cycles).
 
     uv run render_pen_holder.py --hero-glb hero.glb
-    blender --background --factory-startup --python blender_hero.py -- hero.glb "../../Renders/Pen Holder End Effector Render 0.png"
+    blender --background --factory-startup --python blender_hero.py -- hero.glb "Renders/Pen Holder End Effector Render 0.png"
 
 Optional extra args after the output path: samples (default 256), width, height.
 GPU (OptiX/CUDA/HIP/Metal) is enabled for this process only; --factory-startup keeps your preferences untouched.

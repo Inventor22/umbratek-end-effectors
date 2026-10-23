@@ -5,7 +5,7 @@
 """
 Render pen holder v2 (pen_holder_v2.py) to PNG images.
 
-    uv run render_pen_holder_v2.py              # -> <repo>/Renders/Pen Holder v2 Render N.png
+    uv run render_pen_holder_v2.py              # -> Renders/Pen Holder v2 Render N.png
     uv run render_pen_holder_v2.py 3            # just view 3
     uv run render_pen_holder_v2.py --hero-glb hero.glb   # scene for ../Pen Holder/blender_hero.py
 """
@@ -27,9 +27,9 @@ import pen_holder_v2 as v2  # noqa: E402
 import render_pen_holder as rph  # noqa: E402
 from render_pen_holder import INK, Scene, annotate, font, footer, title  # noqa: E402
 
-OUT_DIR = HERE.parents[1] / "Renders"
+OUT_DIR = HERE / "Renders"
 PREFIX = "Pen Holder v2 Render"
-FOOT = "umbratek-cad / End Effectors / Pen Holder v2  -  build123d"
+FOOT = "umbratek-end-effectors / Pen Holder v2  -  build123d"
 FRONT = (0.42, 1.0, 0.22)  # 3/4 view from the front (+Y)
 
 

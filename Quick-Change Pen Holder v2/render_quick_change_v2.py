@@ -5,7 +5,7 @@
 """
 Render the quick-change pen holder v2 (quick_change_v2.py) to PNG images.
 
-    uv run render_quick_change_v2.py                     # -> <repo>/Renders/Quick-Change Pen Holder v2 Render N.png
+    uv run render_quick_change_v2.py                     # -> Renders/Quick-Change Pen Holder v2 Render N.png
     uv run render_quick_change_v2.py --hero-glb hero.glb  # scene for ../Quick-Change Pen Holder/blender_hero_quick_change.py
 """
 
@@ -27,9 +27,9 @@ import render_quick_change as rqc  # noqa: E402  (v1 views: materials, helpers)
 from render_pen_holder import INK, Scene, annotate, font, footer, title  # noqa: E402
 
 qc = v2.qc
-OUT_DIR = HERE.parents[1] / "Renders"
+OUT_DIR = HERE / "Renders"
 PREFIX = "Quick-Change Pen Holder v2 Render"
-FOOT = "umbratek-cad / End Effectors / Quick-Change Pen Holder v2  -  build123d"
+FOOT = "umbratek-end-effectors / Quick-Change Pen Holder v2  -  build123d"
 RED = (200, 60, 20)
 
 
