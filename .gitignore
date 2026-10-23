@@ -1,0 +1,5 @@
+# SolidWorks lock files, created while a part or assembly is open
+~$*
+
+# Python
+__pycache__/
